@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
+// import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import LogoDark from '../../images/logo/cyberpeace.svg';
 import Logo from '../../images/logo/cyberpeacedark.svg';
 
 const SignUp: React.FC = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign Up" />
+      {/* {<Breadcrumb pageName="Sign Up" />}  */}
 
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="flex flex-wrap items-center">
@@ -218,7 +218,7 @@ const SignUp: React.FC = () => {
                 <div className="mt-6 text-center">
                   <p>
                     Already have an account?{' '}
-                    <Link to="/auth/signin" className="text-primary">
+                    <Link to="/" className="text-primary">
                       Sign in
                     </Link>
                   </p>
