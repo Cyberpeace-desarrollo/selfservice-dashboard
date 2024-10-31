@@ -1,13 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
+import React , { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+// import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import LogoDark from '../../images/logo/cyberpeace.svg';
 import Logo from '../../images/logo/cyberpeacedark.svg';
 
 const SignIn: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  // Hardcoded credentials for validation
+  const validEmail = 'admin@example.com';
+  const validPassword = 'Password123';
+  const handleSignIn = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (email === validEmail && password === validPassword) {
+      // Navigate to the dashboard route if credentials match
+      navigate('/dashboard');
+    } else {
+      alert('Invalid email or password');
+    }
+  };
   return (
     <>
-      <Breadcrumb pageName="Sign In" />
+      {/* <Breadcrumb pageName="Sign In" /> */}
 
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="flex flex-wrap items-center">
@@ -29,7 +45,7 @@ const SignIn: React.FC = () => {
                 Sign In to Cyberpeace
               </h2>
 
-              <form>
+              <form onSubmit={handleSignIn}>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
                     Email
@@ -37,6 +53,8 @@ const SignIn: React.FC = () => {
                   <div className="relative">
                     <input
                       type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                     />
@@ -68,6 +86,8 @@ const SignIn: React.FC = () => {
                   <div className="relative">
                     <input
                       type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                       placeholder="6+ Characters, 1 Capital letter"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                     />

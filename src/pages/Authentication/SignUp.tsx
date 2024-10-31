@@ -19,7 +19,7 @@ const SignUp: React.FC = () => {
                 <h3>CyberPeace</h3>
               </Link>
               <p className="2xl:px-20">
-                Prueba Nuestros Servicios
+                  Try our services
               </p>
 
 
