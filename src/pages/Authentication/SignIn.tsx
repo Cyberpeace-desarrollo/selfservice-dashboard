@@ -31,11 +31,13 @@ const SignIn: React.FC = () => {
               Welcome <span className="text-[#1663bb]">Back</span>
             </h2>
             <p className="text-[#bdc3c7] mb-8">Sign in to your account</p>
-            <form>
+            <form onSubmit={handleSignIn}>
               <input
                 type="email"
                 id="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
                 required
                 className="w-full p-4 mb-5 bg-[#34495e] text-white text-lg rounded placeholder-[#7f8c8d] focus:outline-none"
@@ -44,6 +46,8 @@ const SignIn: React.FC = () => {
                 type="password"
                 id="password"
                 name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
                 required
                 className="w-full p-4 mb-5 bg-[#34495e] text-white text-lg rounded placeholder-[#7f8c8d] focus:outline-none"
@@ -59,7 +63,7 @@ const SignIn: React.FC = () => {
         </div>
 
         {/* Company Info Wrapper */}
-        <div className="w-3/5 p-16 bg-[#ecf0f1] text-[#333333] flex items-center justify-center flex-col rounded-r-lg shadow-2xl min-h-[520px] relative z-20" style={{border:"1px solid red"}}>
+        <div className="w-3/5 p-16 bg-[#ecf0f1] text-[#333333] flex items-center justify-center flex-col rounded-2xl shadow-2xl min-h-[520px] relative z-20">
           <div className="text-center">
             <h2 className="text-2xl mb-4">
               Cyberpeace <span className="text-[#2d80df]">Company</span>
@@ -68,7 +72,8 @@ const SignIn: React.FC = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate minus reprehenderit ex voluptates deleniti beatae ea, ratione provident soluta sint debitis facere quibusdam necessitatibus.
             </p>
             <p className="mb-4">
-              New User? <a href="#" className="text-[#2d80df] font-bold hover:underline">Sign Up</a>
+              New User? <Link to="/auth/signup" className="text-primary">
+              <a href="#" className="text-[#2d80df] font-bold hover:underline">Sign Up</a></Link>
             </p>
             <div className="mt-5 flex justify-center items-center">
               <img src={Logo} alt="Imagen decorativa" className="max-w-[65%]" />
