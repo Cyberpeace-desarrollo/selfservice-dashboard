@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
-import LogoDark from '../../images/logo/cyberpeace.svg';
-import Logo from '../../images/logo/cyberpeacedark.svg';
+// import LogoDark from '../../images/logo/cyberpeace.svg';
+
 
 const SignUp: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const SignUp: React.FC = () => {
       {/* {<Breadcrumb pageName="Sign Up" />}  */}
 
 
-      <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to right, #1663bb, #2485a0, #1a2f47), url('/path-to-your-image/fondo-signup.png')" }}>
+     <div className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "linear-gradient(to right, #1663bb, #2485a0, #1a2f47), url('/path-to-your-image/fondo-signup.png')" }}>
       <div className="bg-gray-800 bg-opacity-90 p-10 rounded-lg shadow-lg max-w-md w-full text-white">
         <h2 className="text-2xl font-bold mb-6 text-center">Create Account</h2>
         <form action="#">
@@ -55,7 +54,9 @@ const SignUp: React.FC = () => {
           </button>
         </form>
         <p className="text-center text-gray-400 mt-6">
-          Already have an account? <a href="#" className="text-blue-400 hover:underline">Log In</a>
+            <Link to="/" className="text-primary">
+              Already have an account? <a href="#" className="text-blue-400 hover:underline">Log In</a>
+            </Link>
         </p>
       </div>
     </div>
