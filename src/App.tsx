@@ -38,19 +38,7 @@ function App() {
           </>
         } 
         
-      />
-      {/* Ruta para registro */}
-      <Route 
-        path="/auth/signup" 
-        element={
-          <>  
-             <PageTitle title="SingUp |  CyberPeace" />
-            <SignUp />
-          </>
-         
-        } 
-      />
-      
+      />      
       {/* Rutas protegidas dentro de DefaultLayout */}
       <Route element={<DefaultLayout />}>
         <Route
@@ -144,6 +132,17 @@ function App() {
           }
         />
       </Route>
+      {/* Ruta para registro */}
+      <Route 
+        path="/auth/signup" 
+        element={
+          <>  
+             <PageTitle title="SingUp |  CyberPeace" />
+            <SignUp />
+          </>
+         
+        } 
+      />
     </Routes>
   );
 }
