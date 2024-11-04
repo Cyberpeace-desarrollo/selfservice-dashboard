@@ -63,7 +63,7 @@ const SignIn: React.FC = () => {
     </div>
 
     {/* Company Info Wrapper */}
-    <div className="w-full lg:w-2/5 xl:w-1/3 p-8 lg:p-12 xl:p-16 bg-[#ecf0f1] text-[#333333] flex items-center justify-center flex-col rounded-lg lg:rounded-r-lg shadow-lg lg:shadow-2xl h-auto min-h-[350px] lg:min-h-[400px] max-w-lg mt-4 lg:mt-0 relative z-20">
+    <div className="w-full lg:w-2/5 xl:w-1/3 p-8 lg:p-12 xl:p-16 bg-[#ecf0f1] text-[#333333] flex items-center justify-center flex-col rounded-lg lg:rounded-r-lg shadow-lg lg:shadow-2xl h-auto min-h-[200px] lg:min-h-[100px] max-w-lg mt-4 lg:mt-0 relative z-20">
       <div className="text-center">
         <h2 className="text-2xl mb-4">
           Cyberpeace <span className="text-[#2d80df]">Company</span>
