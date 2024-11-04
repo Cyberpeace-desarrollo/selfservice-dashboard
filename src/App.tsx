@@ -29,7 +29,27 @@ function App() {
   ) : (
     <Routes>
       {/* Ruta inicial para SignIn */}
-      <Route path="/" element={<SignIn />} />
+      <Route 
+        path="/" 
+        element={
+          <>
+            <PageTitle title="SingIn |  CyberPeace" />
+            <SignIn />
+          </>
+        } 
+        
+      />
+      {/* Ruta para registro */}
+      <Route 
+        path="/auth/signup" 
+        element={
+          <>  
+             <PageTitle title="SingUp |  CyberPeace" />
+            <SignUp />
+          </>
+         
+        } 
+      />
       
       {/* Rutas protegidas dentro de DefaultLayout */}
       <Route element={<DefaultLayout />}>
@@ -37,7 +57,7 @@ function App() {
           path="/dashboard"
           element={
             <>
-              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Dashboard |  CyberPeace" />
               <ECommerce />
             </>
           }
@@ -124,9 +144,6 @@ function App() {
           }
         />
       </Route>
-
-      {/* Ruta para registro */}
-      <Route path="/auth/signup" element={<SignUp />} />
     </Routes>
   );
 }

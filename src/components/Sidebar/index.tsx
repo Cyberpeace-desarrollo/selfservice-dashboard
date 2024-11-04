@@ -63,14 +63,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className="flex items-center justify-between gap-2 px-4 py-3 lg:py-3 ">
+      <div className="flex justify-center items-center">
         <NavLink to="/dashboard">
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" className="w-40 h-auto"/>
         </NavLink>
       </div>
       {/* <!-- SIDEBAR HEADER --> */}
 
-      <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear -mt-4">
+      <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear -mt-8">
         {/* <!-- Sidebar Menu --> */}
         <nav className="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
           {/* <!-- Menu Group --> */}
