@@ -7,7 +7,7 @@ const SignIn: React.FC = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  // Credenciales hardcodeadas para validación
+  // Credenciales hardcodeadas para validación de usuario
   const validEmail = 'admin@example.com';
   const validPassword = 'Password123';
 
