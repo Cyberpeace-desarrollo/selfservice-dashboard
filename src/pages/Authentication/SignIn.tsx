@@ -25,7 +25,7 @@ const SignIn: React.FC = () => {
   return (
       <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-[#1663bb] via-[#2485a0] to-[#1a2f47] p-4 lg:p-12">
         {/* Login Wrapper */}
-        <div className="w-full lg:w-2/5 p-6 bg-[#2c3e50] text-white flex flex-col items-center justify-center shadow-lg h-auto min-h-[350px] rounded-lg lg:rounded-l-lg z-10">
+        <div className="w-full lg:w-2/5 p-8 bg-[#2c3e50] text-white flex flex-col items-center justify-center shadow-lg h-auto min-h-[350px] rounded-lg lg:rounded-l-lg z-10">
           <div className="text-center">
             <h2 className="text-xl lg:text-2xl mb-3 lg:mb-4">
               Welcome <span className="text-[#1663bb]">Back</span>
@@ -54,7 +54,7 @@ const SignIn: React.FC = () => {
               />
               <button
                 type="submit"
-                className="w-full p-3 lg:p-4 text-base lg:text-lg font-bold bg-[#2d80df] text-white rounded hover:bg-[#27ae60] transition-colors"
+                className="w-full p-3 lg:p-6 text-base lg:text-lg font-bold bg-[#2d80df] text-white rounded hover:bg-[#27ae60] transition-colors"
               >
                 Sign In
               </button>
@@ -63,7 +63,7 @@ const SignIn: React.FC = () => {
         </div>
 
         {/* Company Info Wrapper */}
-        <div className="w-full lg:w-2/5 xl:w-1/3 p-4 bg-[#ecf0f1] text-[#333333] flex flex-col items-center justify-center rounded-lg lg:rounded-r-lg shadow-lg lg:shadow-2xl h-auto min-h-[250px] lg:min-h-[300px] mt-4 lg:mt-0 relative z-20">
+        <div className="w-full lg:w-2/5 xl:w-1/3 p-4 bg-[#ecf0f1] text-[#333333] flex flex-col items-center justify-center rounded-lg lg:rounded-r-lg shadow-lg lg:shadow-2xl h-auto min-h-[250px] lg:min-h-[550px] mt-4 lg:mt-0 relative z-20">
           <div className="text-center">
             <h2 className="text-lg lg:text-xl mb-2 lg:mb-3">
               Cyberpeace <span className="text-[#2d80df]">Company</span>
