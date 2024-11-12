@@ -264,5 +264,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
+  variants: {
+    scrollbar: ['rounded'], // Opcional para bordes redondeados en el scrollbar
+  }
 };

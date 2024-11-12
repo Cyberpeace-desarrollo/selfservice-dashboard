@@ -80,7 +80,6 @@ const SignIn: React.FC = () => {
           </div>
         </div>
       </div>
-
   );
 };
 
