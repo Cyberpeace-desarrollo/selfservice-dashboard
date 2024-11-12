@@ -1,0 +1,19 @@
+/* Sidebar.css */
+.scrollbar-custom {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #1663bb transparent; /* Color del thumb y del track */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 6px; /* Ancho del scrollbar para WebKit */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #f43f5e; /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del track */
+  }
+  
